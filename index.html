@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="attribution">
+      <div class="ip-search">
+        <div class="header">
+          <h2>IP Address Tracker</h2>
+          <form action="" class="formSubmit">
+            <input
+              type="text"
+              placeholder="Search for any IP address..."
+              class="inputValue"
+            />
+            <button class="btn">></button>
+          </form>
+        </div>
+
+        <div class="details">
+          <div>
+            <h6>IP ADDRESS</h6>
+            <span class="ip-address"></span>
+          </div>
+          <div>
+            <h6>LOCATION</h6>
+            <span class="location"></span>
+          </div>
+          <div>
+            <h6>TIMEZONE</h6>
+            <span class="timezone"></span>
+          </div>
+          <div>
+            <h6>ISP</h6>
+            <span class="isp"></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="weathermap" style="width: 100%; height: 100vh"></div>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.attribution .ip-search {
+  height: 170px;
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+}
+.attribution .ip-search .header {
+  text-align: center;
+}
+.attribution .ip-search .header h2 {
+  color: #fff;
+}
+.attribution .ip-search .header .formSubmit {
+  display: flex;
+  justify-content: center;
+}
+.attribution .ip-search .header .formSubmit .inputValue {
+  height: 30px;
+  width: 350px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+  text-indent: 10px;
+}
+.attribution .ip-search .header .formSubmit .btn {
+  border: none;
+  outline: none;
+  height: 33px;
+  width: 35px;
+  border-radius: 0 8px 8px 0;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.attribution .ip-search .details {
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 65%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+.attribution .ip-search .details div {
+  margin: 0;
+  padding: 10px;
+}
+.attribution .ip-search .details div h6 {
+  margin: 0;
+  margin-bottom: 8px;
+  color: rgb(147, 142, 142);
+}
+.attribution .ip-search .details div span {
+  font-weight: bolder;
+  font-size: 22px;
+}
+.attribution #map {
+  border: 1px solid transparent;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .attribution .ip-search .details {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 479px) {
+  .attribution .ip-search .details {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .attribution .ip-search .header .formSubmit .inputValue {
+    width: 230px;
+  }
+}/*# sourceMappingURL=style.css.map */
